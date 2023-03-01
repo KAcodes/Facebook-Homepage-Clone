@@ -10,21 +10,21 @@ import {RiGamepadFill} from "react-icons/ri";
 
 const LeftSidebar = () => {
   return (
-    <div className='leftside'>
-        <Button className='leftside-btn'>
+    <div className='leftside ms-3'>
+        <Button variant='light' className='leftside-btn'>
             <HiHome className='sideicon'/> Home
         </Button>
-        <Button >Your Profile</Button>
-        <Button >
+        <Button variant='light'>Your Profile</Button>
+        <Button variant='light'>
             <BsFillPlayBtnFill className='sideicon'/>Watch
         </Button>
-        <Button >
+        <Button variant='light'>
             <FaUserFriends className='sideicon'/>Friends
         </Button>
-        <Button >
+        <Button variant='light'>
             <AiFillShop className='sideicon'/>Marketplace
         </Button>
-        <Button >
+        <Button variant='light'>
           <RiGamepadFill className='sideicon'/>Gaming
         </Button>
         

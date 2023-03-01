@@ -4,17 +4,12 @@
 
 body {
   background-color: rgb(238, 233, 233);
-  
 }
 
 .leftside {
   color: white;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  width: fit-content;
-  margin: 10px;
-  height: 86vh;
 }
 
 .leftside > Button {
@@ -29,12 +24,74 @@ body {
   margin-right: 10px;
 }
 
-.friends {
-  margin: 3px;
-  padding: 5px;
+#facebook-banner {
+  color: rgb(67, 67, 252);
 }
 
-.friends > img {
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.header Button {
+  background-color: rgb(238, 233, 233);
+  border-radius: 50%;
+}
+
+.interaction-btns > Button {
+  width: 33%;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: black;
+}
+
+.title-btns > Button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  color: black;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.rightsidebar-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.rightsidebar-heading Button {
+  background-color: rgb(238, 233, 233);
+  border: none;
+  color: grey;
+  font-size: 20px; 
+}
+
+.rightsidebar-profiles Button {
+  background-color: rgb(238, 233, 233);
+  border: none;
+  color: black;
+  margin-left: -10px;
+  width: 100%;
+  text-align: left;
+}
+
+.rightsidebar-profiles {
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+
+.rightsidebar-profiles img {
   margin-right: 10px;
   border-radius: 50%;
+  height: 27px;
 }

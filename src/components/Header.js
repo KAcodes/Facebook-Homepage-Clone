@@ -1,45 +1,41 @@
 import React from 'react'
-import { Navbar, Nav, Dropdown, Badge, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav, Dropdown, FormControl, Button, Col } from 'react-bootstrap'
 import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
 import { FaFacebookMessenger, FaSearch } from "react-icons/fa";
-
+import { BsFillBellFill } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <Navbar >
-            
-                <Navbar.Brand>
+    <Navbar className='header'>
+            <Col md={3} className='ms-3'>
+                <h2 id="facebook-banner">
                     facebook
-                </Navbar.Brand>
+                </h2>
+            </Col>
+            <Col md={6} >
                 <Navbar.Text className="search">
                     <FormControl
-                        style={{ width: 300 }}
-                        placeholder='Search Facebook'
-                        className="m-auto"
-                    />
+                    placeholder='Search Facebook'
+                    className="m-auto"></FormControl>
                 </Navbar.Text>
-                <Nav>
-                    <Dropdown >
-                        
-                        <Dropdown.Toggle variant="success">
-                            <FaFacebookMessenger/>
-                        </Dropdown.Toggle>
-                        <DropdownMenu className="dropdown-menu-end">
-                        </DropdownMenu>
-                    </Dropdown>
-                </Nav>
-                <Nav>
-                    
-                </Nav>
+            </Col>
+            <Col md={3} style={{textAlign: 'right'}}>
+                <Button variant='light' className='leftside-btn'>
+                    <FaFacebookMessenger/>
+                </Button>
+                <Button variant='light' className='leftside-btn'>
+                    <BsFillBellFill/>
+                </Button>
                 <FaFacebookMessenger>
                     <button><Dropdown>
                         <Dropdown.Toggle variant="success">
-                            <FaFacebookMessenger/>
+                            
                         </Dropdown.Toggle>
                         <DropdownMenu className="dropdown-menu-end">
                         </DropdownMenu>
                     </Dropdown></button>
                 </FaFacebookMessenger>
+            </Col>
 
 
         </Navbar>

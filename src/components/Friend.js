@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { Button } from 'react-bootstrap'
 
 const Friend = ({profPic, firstName, lastName}) => {
     
-
   return (
-    <div className='friends'>
-        <img src={profPic}/><span>{firstName} {lastName}</span>
-    </div>
+        <Button variant='light'>
+            <span><img src={profPic}/> {firstName} {lastName}</span></Button>
   )
 }
 
