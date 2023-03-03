@@ -10,10 +10,8 @@ import { MdClose } from "react-icons/md";
 
 const Post = ({profPic, name}) => {
     
-    
-
   return (
-    <Card >
+    <Card className='post'>
         <Card.Title><b>{name}</b> updated their cover photo.
         <span className='title-btns'>
             <Button variant='light'><BsThreeDots/></Button>

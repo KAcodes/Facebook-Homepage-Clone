@@ -2,13 +2,11 @@ import React from 'react';
 import { Card, Nav, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Post from './Post';
-import { HomeTab, ReelsTab } from './PageTab';
 
 
 const Posts = () => {
 
     const [profileArray, setProfileArray] = useState([])
-    const [activeTab, setActiveTab] = useState('tab1')
  
     useEffect(() => {
       
@@ -29,18 +27,28 @@ const Posts = () => {
 
   return (
     <>
-    <Card id="top-post" className='post'>
-      <Card.Header style={{backgroundColor: "white"}}>
-        <button 
-            className={activeTab === "tab1" ? "tab-active" : "tab-unactive"}
-            onClick={() => setActiveTab('tab1')}
-            >Stories</button>
-        <button 
-            className={activeTab === "tab2" ? "tab-active" : "tab-unactive"}
-            onClick={() => setActiveTab('tab2')}
-            >Reels</button>
+    <Card>
+      <Card.Header>
+        <Nav variant="tabs" defaultActiveKey="#first">
+          <Nav.Item style={{width: '50%'}}>
+            <Nav.Link href="#first">Active</Nav.Link>
+          </Nav.Item>
+          <Nav.Item style={{width: '50%'}}>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav.Item>
+        </Nav>
       </Card.Header>
-      {activeTab === "tab1" ? <HomeTab /> : <ReelsTab />}
+      <Card.Body>
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src="holder.js/100px180" />
+                <Button variant="light">Go somewhere</Button>
+            </Card>
+        <Card.Title>Special title treatment</Card.Title>
+        <Card.Text>
+          With supporting text below as a natural lead-in to additional content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
     </Card>
     {posts}
     </>

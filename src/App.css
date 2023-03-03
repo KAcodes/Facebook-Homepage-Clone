@@ -95,3 +95,45 @@ body {
   border-radius: 50%;
   height: 27px;
 }
+
+
+.tab-unactive {
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  background: white;
+  border: 0;
+  border-radius: 5%;
+
+}
+
+.tab-active {
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  color: blue;
+  background: white;
+  border: none;
+  border-bottom: 2px solid blue;
+}
+
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(238, 233, 233);
+}
+
+.post {
+  margin-top: 15px;
+  border-width: 0.25px 0.5px 1px 0.5px;
+  background-color: white;
+   
+}
+
+.wecontent {
+  background-color: red;
+}

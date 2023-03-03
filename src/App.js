@@ -20,9 +20,9 @@ function App() {
           </Col>
         </Row>
         <Row>
-          <Col md={3}><LeftSidebar/></Col>
-          <Col md={6}><Posts/></Col>
-          <Col md={3}><RightSidebar/></Col>
+          <Col md={3} id="leftsidebar"><LeftSidebar/></Col>
+          <Col md={6} id="main-content"><Posts/></Col>
+          <Col md={3} id="rightsidebar"><RightSidebar/></Col>
         </Row>
       </Container>
       
