@@ -5,6 +5,7 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import { IoIosTimer } from "react-icons/io";
 
 
+
 const HomeTab = () => {
 
   return (
@@ -14,13 +15,16 @@ const HomeTab = () => {
       <Card style={{ 
               height: 'auto'
            }}>
-              <Button variant="light"> <Card.Img variant="top" src="holder.js/100px180" /><span>Create Story</span></Button>
+              <Button variant="light"> <Card.Img variant="top" src="holder.js/100px180" /><div>Create Story</div></Button>
       </Card>
       </Col>
-      <Col sm={9}> 
-        <span><GiCardExchange/><p>Share everyday moments with friends and family.</p></span>
-        <span><IoIosTimer/><p>Stories disappear after 24 hours</p></span>
-        <span><FaFacebookMessenger/><p>Replies and reactions are private.</p></span>
+      <Col 
+       sm={9} 
+           id="stories-sentences"
+      > 
+        <div><GiCardExchange className='me-2'/><span>Share everyday moments with friends and family.</span></div>
+        <div><IoIosTimer className='me-2'/><span>Stories disappear after 24 hours</span></div>
+        <div><FaFacebookMessenger className='me-2'/><span>Replies and reactions are private.</span></div>
       </Col>
       </Row>
       </Card.Body>

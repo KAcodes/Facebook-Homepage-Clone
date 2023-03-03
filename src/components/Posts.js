@@ -3,6 +3,8 @@ import { Card, Nav, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Post from './Post';
 import { HomeTab, ReelsTab } from './PageTab';
+import {CgClapperBoard} from 'react-icons/cg';
+import {IoBook} from 'react-icons/io5'
 
 
 const Posts = () => {
@@ -34,11 +36,13 @@ const Posts = () => {
         <button 
             className={activeTab === "tab1" ? "tab-active" : "tab-unactive"}
             onClick={() => setActiveTab('tab1')}
-            >Stories</button>
+            ><span className='top-post-headers'><IoBook/><span>Stories</span></span>
+        </button>
         <button 
             className={activeTab === "tab2" ? "tab-active" : "tab-unactive"}
             onClick={() => setActiveTab('tab2')}
-            >Reels</button>
+            ><span className='top-post-headers'><CgClapperBoard/><span>Reels</span></span>
+        </button>
       </Card.Header>
       {activeTab === "tab1" ? <HomeTab /> : <ReelsTab />}
     </Card>

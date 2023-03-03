@@ -106,7 +106,6 @@ body {
   background: white;
   border: 0;
   border-radius: 5%;
-
 }
 
 .tab-active {
@@ -130,10 +129,18 @@ body {
 .post {
   margin-top: 15px;
   border-width: 0.25px 0.5px 1px 0.5px;
-  background-color: white;
-   
+  background-color: white;   
 }
 
-.wecontent {
-  background-color: red;
+.top-post-headers {
+  align-items: baseline;
 }
+
+.top-post-headers > * {
+  margin: 5px;
+}
+
+#stories-sentences > div {
+  padding: 15px 5px 15px 3px;
+}
+
