@@ -13,13 +13,15 @@ function App() {
   
   return (
 
-     <Container fluid className='g-0' >
-        <Row noGutters={true}>
+     <Container fluid className='g-0'>
+        <Row 
+          noGutters={true}
+          className='g-0'>
           <Col>
             <Header/>
           </Col>
         </Row>
-        <Row>
+        <Row className='g-0'>
           <Col md={3} id="leftsidebar"><LeftSidebar/></Col>
           <Col md={6} id="main-content"><Posts/></Col>
           <Col md={3} id="rightsidebar"><RightSidebar/></Col>

@@ -1,35 +1,55 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
-import { AiOutlineLike } from "react-icons/ai";
+import { Button, Card, Row, Col } from 'react-bootstrap';
+import { AiOutlineLike, AiFillHeart } from "react-icons/ai";
 import { VscComment  } from "react-icons/vsc";
 import { RiShareForwardLine } from "react-icons/ri";
-import { BsThreeDots } from "react-icons/bs";
+import { BsThreeDots, BsGlobeAmericas } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
+import { HiThumbUp } from "react-icons/hi";
+import myPic from "./intropic.jpg";
 
 
 
-const Post = ({profPic, name}) => {
+const Post = ({profPic, name, date}) => {
     
   return (
     <Card className='post'>
-        <Card.Title><b>{name}</b> updated their cover photo.
-        <span className='title-btns'>
+      <Card.Title className='post-header'>
+        <Row>
+          <Col xs={1}><img className='smallImage' src={profPic}/></Col>
+          <Col xs={9}>
+            <span>
+              <b>{name}</b> updated their cover photo.
+            </span><br/>
+            <span>{date} d . <BsGlobeAmericas/></span>
+          </Col>
+          <Col className='title-btns' xs={2}>
             <Button variant='light'><BsThreeDots/></Button>
             <Button variant='light'><MdClose/></Button>
-        
-        </span>
-        </Card.Title>
-        <Card.Img variant="top" src={profPic} />
+          </Col>
+        </Row>
+      </Card.Title>
+      <Card.Img variant="top" src={profPic} />
       <Card.Body>
+        <div>
+          <HiThumbUp className='reaction-btns likes'/><AiFillHeart className='reaction-btns hearts'/>
+        </div>
         <span className='interaction-btns'>
             <Button variant='light'><AiOutlineLike/>Like</Button>
             <Button variant='light'><VscComment/>Comment</Button>
             <Button variant='light'><RiShareForwardLine/>Share</Button> 
         </span>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <Row>
+          <Col xs={1}><img 
+            src={myPic}
+            className="sideicon"/>
+          </Col>
+          <Col xs={11}>
+              <div className="searchBar">
+                <input className="searchInput" type="text" name="searchQueryInput" placeholder='Write a comment...' />
+              </div>
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
     

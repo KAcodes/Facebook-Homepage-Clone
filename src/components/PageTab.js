@@ -3,6 +3,7 @@ import { Card, Button, Col, Row } from 'react-bootstrap';
 import {GiCardExchange} from 'react-icons/gi';
 import { FaFacebookMessenger } from "react-icons/fa";
 import { IoIosTimer } from "react-icons/io";
+import myPic from "./intropic.jpg"
 
 
 
@@ -12,10 +13,24 @@ const HomeTab = () => {
     <Card.Body>
       <Row>
       <Col sm={3}>
-      <Card style={{ 
-              height: 'auto'
-           }}>
-              <Button variant="light"> <Card.Img variant="top" src="holder.js/100px180" /><div>Create Story</div></Button>
+      <Card 
+        style={{ 
+          height: 'auto'
+        }}>
+        <Button 
+        style={{ 
+          width: '100%',
+          padding: '0'
+        }}
+          variant="light"> 
+          <Card.Img
+            style={{ 
+              width: '100%'
+            }} 
+            variant="top" 
+            src={myPic}/>
+          <div>Create Story</div>
+        </Button>
       </Card>
       </Col>
       <Col 
