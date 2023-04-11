@@ -11,13 +11,14 @@ import myPic from "./intropic.jpg";
 
 const LeftSidebar = () => {
   return (
-    <div className='leftside ms-3'>
+    <div className='leftside ms-3 p-2'>
         <Button variant='light' className='leftside-btn'>
             <HiHome className='sideicon'/>Home
         </Button>
         <Button variant='light'>
           <span><img src={myPic} className='sideicon'/></span>
           John Doe</Button>
+          <div className='line'></div>
         <Button variant='light'>
             <BsFillPlayBtnFill className='sideicon'/>Watch
         </Button>

@@ -40,37 +40,38 @@ const Posts = () => {
           <button
             className={activeTab === "tab1" ? "tab-active" : "tab-unactive"}
             onClick={() => setActiveTab('tab1')}
-          ><span className='top-post-headers'><IoBook /><span>Stories</span></span>
+          ><span className='top-post-headers'><IoBook style={{ fontSize: "24px" }}/><span style={{ fontSize: "14px" }}>Stories</span></span>
           </button>
           <button
             className={activeTab === "tab2" ? "tab-active" : "tab-unactive"}
             onClick={() => setActiveTab('tab2')}
-          ><span className='top-post-headers'><CgClapperBoard /><span>Reels</span></span>
+          ><span className='top-post-headers'><CgClapperBoard style={{ fontSize: "24px" }}/><span style={{ fontSize: "14px" }}>Reels</span></span>
           </button>
         </Card.Header>
         {activeTab === "tab1" ? <HomeTab /> : <ReelsTab />}
       </Card>
       <Card className='post'>
         <Row className="rightsidebar-heading" style={{ padding: '10px 5px 5px 20px' }}>
-          <Col xs={1} ><img
+          <Col xs={1}><img
             src={myPic}
             id="myPostPic"/>
           </Col>
-          <Col xs={11} style={{  }}>
-            <input id="myPost" className="searchInput" type="text" placeholder='What&#39;s on your mind John Doe?' />
+          <Col xs={11}>
+            <input id="myPost" className="searchInput" type="text" placeholder='What&#39;s on your mind, John Doe?' />
           </Col>
         </Row>
-        <Row className="rightsidebar-heading" style={{ padding: '10px 5px 5px 20px' }}>
+        <div className='line'></div>
+        <Row className="" style={{ padding: '10px 5px 5px 20px' }}>
           <Col>
-            <span className='interaction-btns'>
-            <Button style={{ backgroundColor: "white"}}>
-              <FaVideo style={{ color: 'red' }} /> Live Video
+            <span className='interaction-btns interaction-btns-search'>
+            <Button variant='light'>
+              <FaVideo style={{ color: 'red' }} className=' big-icon' /> Live Video
             </Button>
-            <Button style={{ backgroundColor: "white"}}>
-              <GrGallery style={{color: 'green'}} /> Photo/video
+            <Button  variant='light'>
+              <GrGallery style={{backgroundColor: 'green'}} className=' big-icon'/> Photo/video
             </Button>
-            <Button style={{ backgroundColor: "white"}}>
-              <BsEmojiSmile style={{color: 'yellow' }}/> Feeling/activity
+            <Button  variant='light'>
+              <BsEmojiSmile style={{color: 'yellow' }} className=' big-icon'/> Feeling/activity
             </Button>
             </span>
           </Col>

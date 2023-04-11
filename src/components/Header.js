@@ -1,16 +1,16 @@
 import React from 'react'
-import { Navbar, Nav, Dropdown, FormControl, Button, Col } from 'react-bootstrap'
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
-import { FaFacebookMessenger, FaSearch } from "react-icons/fa";
+import { Navbar, Button, Col } from 'react-bootstrap';
+import { FaFacebookMessenger } from "react-icons/fa";
 import { BsFillBellFill } from "react-icons/bs";
+import myPic from "./intropic.jpg";
 
 const Header = () => {
   return (
     <Navbar className='header'>
             <Col md={3} className='ps-4'>
-                <h2 id="facebook-banner">
+                <h3 id="facebook-banner">
                     <b>facebook</b> 
-                </h2>
+                </h3>
             </Col>
             <Col md={6} className='py-1'>
                 <div className="searchBar header-search">
@@ -30,15 +30,11 @@ const Header = () => {
                 <Button variant='light' className='right-header-btns'>
                     <BsFillBellFill/>
                 </Button>
-                <FaFacebookMessenger>
-                    <button><Dropdown>
-                        <Dropdown.Toggle variant="success">
-                            
-                        </Dropdown.Toggle>
-                        <DropdownMenu className="dropdown-menu-end">
-                        </DropdownMenu>
-                    </Dropdown></button>
-                </FaFacebookMessenger>
+                <Button variant='light' className='right-header-btns'
+                style={{}}>
+                    <img src={myPic} 
+                    className="sideicon"/>
+                </Button>
             </Col>
 
 

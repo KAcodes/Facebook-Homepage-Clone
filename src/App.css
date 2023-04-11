@@ -1,9 +1,17 @@
 .App {
   text-align: left;
+  
 }
 
 body {
   background-color: rgba(245, 245, 234, 0.952);
+}
+
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400;
 }
 
 .leftside {
@@ -17,6 +25,11 @@ body {
   border: none;
   color: black;
   text-align: left;
+  margin-top: 4px;
+}
+
+.leftside > * {
+  font-size: 13px;
 }
 
 .sideicon {
@@ -84,11 +97,19 @@ body {
   border-radius: 50%;
 }
 
+.right-header-btns > img {
+  margin: 0;
+}
+
 .interaction-btns > Button {
   width: 33%;
   background-color: rgb(255, 255, 255);
   border: none;
   color: black;
+}
+
+.interaction-btns-search > * {
+  background-color: white;
 }
 
 .title-btns > Button {
@@ -102,6 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 3em;
+  
 }
 
 .rightsidebar-heading {
@@ -113,8 +135,7 @@ body {
 .rightsidebar-heading Button {
   background-color: rgba(245, 245, 234, 0.952);
   border: none;
-  color: grey;
-  font-size: 20px; 
+  color: grey; 
 }
 
 .rightsidebar-profiles Button {
@@ -136,6 +157,13 @@ body {
   margin-right: 10px;
   border-radius: 50%;
   height: 27px;
+}
+
+.friend-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+  margin-left: 12px;
 }
 
 .tab-unactive {
@@ -160,6 +188,22 @@ body {
   border-bottom: 2px solid blue;
 }
 
+.line {
+  width: 95%;
+  border-top: solid 0.1em rgb(184, 184, 184);
+  margin: 5px;
+  align-self: center;
+}
+
+.online-dot {
+  background-color: rgb(5, 180, 5);
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  margin-left: -15px;
+  margin-bottom: -10px;
+}
 
 #main-content {
   display: flex;
@@ -171,6 +215,10 @@ body {
   margin-top: 15px;
   border-width: 0.25px 0.5px 1px 0.5px;
   background-color: white;   
+}
+
+.post * {
+  font-size: 13px;
 }
 
 .post-header {
@@ -202,12 +250,18 @@ body {
 }
 
 .top-post-headers > * {
-  margin: 5px;
+  margin: 10px;
 }
 
 #stories-sentences > div {
   padding: 15px 5px 15px 3px;
 }
+
+.stories-content {
+  align-items: center;
+}  
+
+
 
 .smallImage {
   width: 40px;
@@ -224,4 +278,10 @@ body {
 
 .myPost-btns {
   background-color:white;
+}
+
+.big-icon {
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-right: 4px;
 }

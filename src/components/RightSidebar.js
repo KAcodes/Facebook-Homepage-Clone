@@ -38,13 +38,13 @@ const RightSidebar = () => {
   
   return (
     <div className='rightside'>
-      <div className='rightsidebar-heading'>
+      <div className='rightsidebar-heading' style={{ fontSize: "16px" }}>
             <span style={{width: '50%'}} >Contacts</span>
             <div style={{textAlign: 'right',
           width: '50%'}}>
-            <Button><BiVideoPlus/></Button>
-            <Button><FaSearch/></Button>
-            <Button><BsThreeDots/></Button>
+            <Button  variant='light'><BiVideoPlus/></Button>
+            <Button  variant='light'><FaSearch/></Button>
+            <Button  variant='light'><BsThreeDots/></Button>
             </div> 
       </div>
       <div className='rightsidebar-profiles'>

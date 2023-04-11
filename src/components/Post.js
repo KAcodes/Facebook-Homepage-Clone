@@ -34,11 +34,13 @@ const Post = ({profPic, name, date}) => {
         <div>
           <HiThumbUp className='reaction-btns likes'/><AiFillHeart className='reaction-btns hearts'/>
         </div>
+        <div className='line'></div>
         <span className='interaction-btns'>
             <Button variant='light'><AiOutlineLike/>Like</Button>
             <Button variant='light'><VscComment/>Comment</Button>
             <Button variant='light'><RiShareForwardLine/>Share</Button> 
         </span>
+        <div className='line'></div>
         <Row>
           <Col xs={1}><img 
             src={myPic}
