@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Facebook Clone 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description 
 
-## Available Scripts
+As part of my set of website clones, I built an imitation of the Facebook homepage. I used this project to refine my skills in plain CSS as well as using the bootstrap libraries to assist with components. 
 
-In the project directory, you can run:
+As I go on and update I will add functionality to the page, and a database allowing users to log on and write comments.
 
-### `npm start`
+### Images
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/61561703/231881160-0bbe3d21-b8ca-4388-80bf-1265e8e7a27d.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/61561703/231881482-011bb7d0-9865-4349-a31d-8a6296f1d791.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Limitations 
 
-### `npm run build`
+* The image I am retrieving from the database are small so when enlarged to fit the posts, appear very pixelated. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* The icons used were generic icons from a member on github as I could not find Facebook SVGs. When I find Facebook SVGs I will add them to the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project config
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React 
+* Bootstrap
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to install and run this project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1) Open your terminal and navigate to the folder you want to install my project, then type
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+$ git clone https://github.com/KAcodes/Facebook-Homepage-Clone
+```
+  This clones the repo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2) cd into the new folder and type
 
-## Learn More
+```bash
+$ npm install 
+```
+  This installs the required dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3) To run the React project type 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+$ npm start
+```
+The app will then run in development mode with path http://localhost:3000 in your browser.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Credits 
 
-### Analyzing the Bundle Size
+* Used the random user API at https://randomuser.me/api/ to produce the user content
+* Used Icons from https://react-icons.github.io/react-icons/ to mimic Facebook icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
