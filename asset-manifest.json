@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Facebook-Homepage-Clone/static/css/main.570c0a8d.css",
+    "main.js": "/Facebook-Homepage-Clone/static/js/main.4699644b.js",
+    "static/media/intropic.jpg": "/Facebook-Homepage-Clone/static/media/intropic.d6d934bc120549926cf3.jpg",
+    "index.html": "/Facebook-Homepage-Clone/index.html",
+    "main.570c0a8d.css.map": "/Facebook-Homepage-Clone/static/css/main.570c0a8d.css.map",
+    "main.4699644b.js.map": "/Facebook-Homepage-Clone/static/js/main.4699644b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.570c0a8d.css",
+    "static/js/main.4699644b.js"
+  ]
+}
