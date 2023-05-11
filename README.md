@@ -4,7 +4,11 @@
 
 As part of my set of website clones, I built an imitation of the Facebook homepage. I used this project to refine my skills in plain CSS as well as using the bootstrap libraries to assist with components. 
 
-As I go on and update I will add functionality to the page, and a database allowing users to log on and write comments.
+As I go on and update I will add functionality to the page, and a database allowing users to log on and write comments.  
+
+Click on link below to see page hosted on Github Pages.
+
+https://kacodes.github.io/Facebook-Homepage-Clone
 
 ### Images
 
